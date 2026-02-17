@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            Portfolio
+        </h1>
+
+
+        <div class ="main-container-home">
+            <div class="banner"><h2>Matthieu Benoit</h2></div>
+            <img class = "pp" src="{{url_for('static', filename='home/pp.png')}}" alt="pp">
+            <div class="text-box-home"> <strong>
+                Second-year engineering student at Mines Paris – PSL, specializing in computer science,
+                data analysis, quantitative modeling and fundamental physics. Strong experience in Python, real-time C++ simulations, and full-stack development. Passionate about building
+                high-performance systems and solving complex engineering problems. </strong>
+            </div>
+
+        </div>
+
+
+        <div class="main-container-projects-2">   
+            <ul class="list">
+                <li><a href="{{url_for('projects')}}">Projects</a></li>
+                <li><a href="{{url_for('static', filename='resume.pdf')}}" target="blank">View resume</a></li>
+                <li><a href="https://github.com/matthieu-benoit">Github</a></li>
+                <li><a href = "https://www.linkedin.com/in/matthieu-benoit-4423a8329/">Linkedin</a></li>
+            </ul>
+            <p class="circle-text-box-home">As you can see below, i like basketball, piano, tinkering iPhones, camping, cooking, poker and many mores !</p>
+            <img class = "home-image" src="{{url_for('static', filename='home/school-logo.jpg')}}" alt = 'school-logo'>
+        </div>
+
+    
+        <div class="main-container-home-images">
+            <img class = "home-image" src="{{url_for('static', filename='home/basketball.jpg')}}" alt = 'basketball'>
+            <img class = "home-image" src="{{url_for('static', filename='home/piano.jpg')}}" alt = 'piano'>
+            <img class = "home-image" src="{{url_for('static', filename='home/tinkering.jpg')}}" alt = 'tinkering'>
+            <img class = "home-image" src="{{url_for('static', filename='home/camping.jpg')}}" alt = 'camping'>
+            <img class = "home-image" src="{{url_for('static', filename='home/cooking.jpg')}}" alt = 'cooking'>
+            <img class = "home-image" src="{{url_for('static', filename='home/poker.jpeg')}}" alt = 'poker'>
+        </div>
+        
+        <p class="space">space</p>
+
+        <div class="text-box-home-2">  <p><strong>Contact :</strong></p> <p>📞 +33 6 67 40 00 37</p>  <p>📧 matthieu.benoit@etu.minesparis.psl.eu</p></div>
+
+    </body>
+</html>

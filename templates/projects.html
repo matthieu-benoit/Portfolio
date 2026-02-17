@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+
+    <body>
+        <h1>
+            Projects
+        </h1>
+
+        
+        <div class="main-container-projects">
+            <div class="text-box-projects">
+                <p class = "subtitle">Physically-based underwater ray tracing simulation</p>
+                <p>📍 Sophia Antipolis, France.         📆 from November 2024 to December 2025 (3 weeks).         👤 In a team of 18 programmers</p>
+                <p>
+                    <strong>Achievements :</strong>
+                    <ul>
+                        <li>Implemented in <strong>C++</strong> the 4 main physical laws governing light-matter interaction :  transmission, reflexion, absorption and scattering</li>
+                        <li>GPU parallelization using <strong>OptiX</strong> to accelerate image computation</li>
+                        <li>Designed and modeled scene meshes</li>
+                        <li>Used real light source data to accurately reproduce lighting conditions and trace ray paths from scene objects to the light source</li>
+                    </ul>
+                </p>
+            </div>
+            <img class ="side-image" src="{{url_for('static', filename='projects/migocean.gif')}}" alt="migocean">
+        </div>
+        
+        <p class="space">space</p>
+
+        <div class="main-container-projects">
+            <div class="text-box-projects">
+                <p class = "subtitle">Image-based quality control algorithm for LHC chip detector production</p>
+                <p>📍 Paris, France.         📆 June 2025 (1 weeks).         👤 In a team of 5 programmers</p>
+                <p>
+                    <strong>Achievements :</strong>
+                    <ul>
+                        <li>Developed a <strong>Python</strong> wire-counting algorithm to verify the presence of 350 wires on the left and on the right side of the chip</li>
+                        <li>Implemented <strong>Python</strong> image processing functions for cropping and rotation</li>
+                        <li>Designed a <strong>BFS-based algorithm</strong> to track each wire path and highlight in red faulty wires (not connected to the correct electrical potential) to ease human inspection</li>
+                        <li>Built a complete data processing pipeline for automated quality control and evaluating the accuracy of the previously mentionned functions on the <strong>dataset of images</strong></li>
+                    </ul>
+                </p>
+            </div>
+            <img class ="side-image" src="{{url_for('static', filename='projects/chip.jpeg')}}" alt="chip">
+        </div>
+
+        <p class="space">space</p>
+
+        <div class = "main-container-projects">
+            <div class="text-box-projects">
+                <p class = "subtitle">Real-time C++ simulation of the transition to chaos of a bouncing ball</p>
+                <p>📍 Nancy, France.         📆 Mai 2025.         👤 Individual project</p>
+                <p>
+                    <strong>Achievements :</strong>
+                    <ul>
+                        <li>Developed a real-time viualization interface for ball motion</li>
+                        <li>Implemented physical interaction and motion laws in <strong>C++</strong></li>
+                        <li>Automatically logged position data over time into CSV files</li>
+                        <li>Created a <strong>Python</strong> notebook to analyze trajectories and identify motion periodicity</li>
+                    </ul>
+                </p>
+            </div>
+            <img class ="side-image" src="{{url_for('static', filename='projects/ball.gif')}}" alt="ball"> 
+        </div>
+
+        <p class="space">space</p>
+
+        <div class="main-container-projects">
+            <div class="text-box-projects">
+                <p class = "subtitle">Diffusion model using denoising neural networks and Langevin sampling</p>
+                <p>📍 Paris, France.         📆 September 2025 (1 week).         👤 Indiviual project</p>
+                <p>
+                    <strong>Achievements :</strong>
+                    <ul>
+                        <li>Trained a denoising neural network using <strong>PyTorch</strong> by minimizing the KL divergence between clean and intentionally noised images</li>
+                        <li>Used the trained neural network to compute the score function of the learned distribution</li>
+                        <li>Implemented Langevin sampling to turn our neural network into a diffusion-based neural network which iterates the denoising process for different thresholds of noise</li>
+                    </ul>
+                </p>
+            </div>
+            <img class ="side-image" src="{{url_for('static', filename='projects/genmodel.gif')}}" alt="genmodel">
+        </div>
+
+        <p class="space">space</p>
+
+        <div class="main-container-projects">
+            <div class="text-box-projects">
+                <p class = "subtitle">Self-balancing Segway mechatronics project</p>
+                <p>📍 Paris, France.         📆 From September 2025 to November (2 months).         👤 In a team of 4 engineering students</p>
+                <p>
+                    <strong>Achievements :</strong>
+                    <ul>
+                        <li>Linearized the Euler-Lagrange equations around the equilibrium point</li>
+                        <li>Formulated the system in matrix form and designed a controler to make it go from unstable to stable</li>
+                        <li>Placed the eigenvalues via <strong>Matlab</strong> with analytical validation</li>
+                        <li>Used <strong>CAD</strong> on <strong>Fusion</strong> software, wooden structure laser-cutting and plastic pieces 3D-printing to build the robot</li>
+                        <li>Programmed the <strong>Arduino</strong> controller and tuned parameters to make the Segway roll without falling</li>
+                    </ul>
+                </p>
+            </div>
+            <img class ="side-image" src="{{url_for('static', filename='projects/segway.jpg')}}" alt="segway">
+        </div>
+
+        <p class="space">space</p>
+
+        <div class="main-container-projects">
+            <div class="text-box-projects">
+                <p class = "subtitle">Birds flight simulation (Boids model) </p>
+                <p>📍 Paris, France.         📆 From September 2025 to November (2 months).         👤 In a team of 4 engineering students</p>
+                <p>
+                    <strong>Achievements :</strong>
+                    <ul>
+                        <li>Implemented 2 behavioral laws in <strong>C++</strong> : each bird is attracted to the the center of mass of the bird group but must not to collide with other birds</li>
+                        <li>Added a bird predator in red which pursues other birds and can eat them. Made other birds want to avoid it</li>
+                        <li>Used the <strong>C++</strong> SDL to visualise their motion frame by frame</li>
+                    </ul>
+                </p>
+            </div>
+            <img class ="side-image" src="{{url_for('static', filename='projects/boids.gif')}}" alt="boids">
+        </div>
+
+        
+        <a href="{{url_for('home')}}">Home</a>
+    </body>
+</html>
